@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     /* background-color: hsl(0, 0%, 15%); */
-    color: hsl(0, 0%, 100%);
+    /* color: hsl(0, 0%, 100%); */
     font-family: "Inter", sans-serif;
 }
 
@@ -24,7 +24,7 @@ body {
     background-color: hsl(0, 0%, 12%);
     border: 2px;
     overflow: hidden;
-    min-height: 480px;
+    min-height: 500px;
 
 }
 
@@ -48,6 +48,7 @@ img {
     font-weight: 800;
     padding-top: 10px;
     padding-bottom: 5px;
+    color: hsl(0, 0%, 100%);
 }
 
 .location {
@@ -62,7 +63,7 @@ img {
     padding-top: 18px;
     padding-bottom: 10px;
     font-weight: 400;
-
+    color: hsl(0, 0%, 100%);
 }
 
 .social-link {
@@ -75,16 +76,30 @@ img {
 
 .link {
     width: 270px;
+    height: 40px;
     border-radius: 5px;
-    padding: 5px 10px 5px 10px;
+    padding-top: 10px;
     text-align: center;
-    margin: 18px 10px 0px 10px;
+    margin: 10px 10px 5px 10px;
     background-color: hsl(0, 0%, 20%);
 }
 
 a {
     text-decoration: none;
-    background-color: hsl(0, 0%, 20%);
+    /* text-align: center; */
+    font-size: 14px;
+    /* background-color: hsl(0, 0%, 20%); */
+    color: hsl(0, 0%, 100%);
+}
+
+.link:hover {
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+    color: black;
+}
+
+.link:hover a {
+    color: black;
 }
 
 /* 360*740,375*667 */
@@ -93,15 +108,22 @@ a {
         padding: 3vh;
     }
 
+    .main {
+        min-height: 490px;
+    }
+
     .social-link {
         width: 200px;
         padding-bottom: 15px;
-        margin: auto;
+        /* margin: auto; */
+        margin: 15px auto auto auto;
 
     }
 
     .link {
         width: 250px;
+        height: 33px;
+
     }
 }
 
